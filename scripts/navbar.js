@@ -1,5 +1,6 @@
 const menuHamburguer = document.querySelector(".menu-hamburguer");
 const responsiveNav = document.querySelector(".responsive-nav");
+const responsiveNavItems = document.querySelectorAll(".responsive-nav a");
 
 const toggleMenu = () => {
   menuHamburguer.classList.toggle("change");
@@ -11,3 +12,6 @@ const toggleMenu = () => {
 };
 
 menuHamburguer.addEventListener("click", toggleMenu);
+responsiveNavItems.forEach((element) => {
+  element.addEventListener("click", toggleMenu);
+});
