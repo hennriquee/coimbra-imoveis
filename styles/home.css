@@ -8,6 +8,10 @@ section {
   width: 100%;
 }
 
+.home {
+  height: 100dvh;
+}
+
 h1 {
   cursor: default;
   font-weight: 400;
