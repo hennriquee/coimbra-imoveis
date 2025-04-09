@@ -4,12 +4,8 @@
 
 section {
   height: 100vh;
+  min-height: 100dvh;
   width: 100%;
-}
-
-.home {
-  height: 100vh;
-  height: 100svh;
 }
 
 h1 {
@@ -332,6 +328,10 @@ h1 {
 /* RESPONSIVE */
 
 @media (min-width: 0px) {
+  .home-container {
+    margin-bottom: 3rem;
+  }
+
   .about {
     padding: 1rem 3rem;
   }
@@ -400,6 +400,9 @@ h1 {
 }
 
 @media (min-width: 992px) {
+  .home-container {
+    margin-bottom: 0;
+  }
   .contact-line-boxes {
     flex-direction: row;
   }
