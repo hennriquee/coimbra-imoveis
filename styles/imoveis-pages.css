@@ -26,6 +26,9 @@ main {
 .imovel-images {
   flex: 1;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  justify-content: center;
 }
 
 .imovel-images img {
@@ -35,7 +38,7 @@ main {
 
 .gallery-images {
   display: flex;
-  flex-direction: column;
+  flex-direction: rw;
   gap: 1rem;
   justify-content: center;
 }
@@ -130,9 +133,9 @@ main {
   height: 380px;
   overflow: hidden;
   border-radius: 10px;
-  margin-left: 1rem;
   display: flex;
-  align-items: center;
+  align-items: bottom;
+  margin-bottom: 0.5rem;
 }
 
 #destaque-img {
@@ -152,8 +155,16 @@ main {
 @media (min-width: 0px) {
   main {
     flex-direction: column;
-    padding: 5rem 2rem;
+    padding: 7rem 2rem;
     gap: 0;
+  }
+
+  .page-btns {
+    gap: 1rem;
+  }
+
+  .wpp-btn {
+    gap: 0.1rem;
   }
 
   .destaque-container,
@@ -177,7 +188,10 @@ main {
     gap: 1rem;
   }
   main {
-    padding: 5rem;
+    padding: 7rem 5rem;
+  }
+  .wpp-btn {
+    gap: 0.6rem;
   }
 }
 
@@ -187,17 +201,14 @@ main {
 @media (min-width: 992px) {
   main {
     flex-direction: row;
-    padding: 9rem 5rem;
+    padding: 8rem 5rem;
     gap: 3rem;
+    align-items: start;
   }
 
   .gallery-images,
   #valor {
     justify-content: start;
-  }
-
-  .destaque-container {
-    align-items: start;
   }
 
   #destaque-container {
