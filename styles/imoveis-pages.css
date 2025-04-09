@@ -152,11 +152,19 @@ main {
   height: 2rem;
 }
 
+#title1 {
+  margin-bottom: 2.5rem;
+}
+
 @media (min-width: 0px) {
   main {
     flex-direction: column;
     padding: 7rem 2rem;
     gap: 0;
+  }
+
+  #title2 {
+    display: none;
   }
 
   .page-btns {
@@ -172,12 +180,12 @@ main {
     width: 100%;
   }
 
-  #imovel-title {
+  .imovel-title {
     text-align: center;
   }
 
   #valor,
-  #imovel-title,
+  .imovel-title,
   #content {
     justify-content: center;
   }
@@ -204,6 +212,14 @@ main {
     padding: 8rem 5rem;
     gap: 3rem;
     align-items: start;
+  }
+
+  #title2 {
+    display: block;
+  }
+
+  #title1 {
+    display: none;
   }
 
   .gallery-images,

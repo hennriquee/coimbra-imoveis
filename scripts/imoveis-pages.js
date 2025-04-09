@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const galleryContainer = document.querySelector(".gallery-images");
   const botaoWpp = document.querySelector(".wpp-btn");
   const botaoEmail = document.querySelector(".email-btn");
-  const imovelTitle = document.getElementById("imovel-title");
+  const imovelTitle = document.querySelectorAll(".imovel-title");
   const spanValor = document.getElementById("valor");
 
   // Carrega dados nos spans
@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const categoria = localStorage.getItem("categoria") || "Imóvel";
   const bairro = localStorage.getItem("bairro") || "";
   const emojiCategoria = categoria === "Apartamento" ? "🏢" : "🏡";
-  imovelTitle.innerHTML = `${categoria} no bairro ${bairro}${emojiCategoria}`;
+  imovelTitle.forEach((element) => {
+    element.innerHTML = `${categoria} no bairro ${bairro}${emojiCategoria}`;
+  });
 
   const valorLS = localStorage.getItem("valor") || "";
   spanValor.innerText = valorLS ? `R$ ${valorLS}` : "";
