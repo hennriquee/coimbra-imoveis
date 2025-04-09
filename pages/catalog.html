@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/images/logo2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/catalog.css" />
+    <script defer src="/scripts/catalog.js"></script>
+    <script defer src="/scripts/navbar.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Coimbra Imóveis - Catálogo</title>
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="#"><img src="/images/logo.png" alt="logo" /></a>
+
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="../index.html">Início</a>
+          <a href="./catalog.html">Imóveis</a>
+          <a href="../index.html#contact">Contato</a>
+          <a href="../index.html#about">Sobre</a>
+        </div>
+      </nav>
+
+      <nav class="responsive-nav">
+        <a href="../index.html">Início</a>
+        <a href="./catalog.html">Imóveis</a>
+        <a href="../index.html#contact">Contato</a>
+        <a href="../index.html#about">Sobre</a>
+      </nav>
+
+      <div class="menu-hamburguer">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+    <main>
+      <div class="main-header">
+        <h1>Catálogo</h1>
+        <div class="filter-main">
+          <div class="filter-box">
+            <label for="bairro">Bairro</label>
+
+            <select name="bairro" id="select-bairro">
+              <option value="Todos" selected>Todos</option>
+            </select>
+          </div>
+
+          <div class="filter-box">
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="select-categoria">
+              <option value="Todos" selected>Todos</option>
+              <option value="Casa">Casa</option>
+              <option value="Apartamento">Apartamento</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <section class="imoveis">
+        <!-- IMOVEL BOX -->
+        <div
+          class="imoveis-box"
+          data-bairro="Marta Helena"
+          data-categoria="Casa"
+          data-quartos="3"
+          data-banheiros="2"
+          data-valor="50.000,00"
+        >
+          <div class="imoveis-box-img">
+            <img src="/images/image1.avif" alt="house-img" />
+          </div>
+          <div class="imoveis-box-container">
+            <div class="imoveis-box-content">
+              <h4 class="categoria"></h4>
+              <p class="nome-bairro"></p>
+              <p class="qtd-quartos"></p>
+              <p class="qtd-banheiros"></p>
+              <hr />
+              <p class="valor"></p>
+            </div>
+
+            <a href="#" class="seemore-btn">Ver mais</a>
+          </div>
+        </div>
+        <!-- IMOVEL BOX -->
+        <!-- IMOVEL BOX -->
+        <div
+          class="imoveis-box"
+          data-bairro="Marta Helena"
+          data-categoria="Casa"
+          data-quartos="3"
+          data-banheiros="2"
+          data-valor="50.000,00"
+        >
+          <div class="imoveis-box-img">
+            <img src="/images/image1.avif" alt="house-img" />
+          </div>
+          <div class="imoveis-box-container">
+            <div class="imoveis-box-content">
+              <h4 class="categoria"></h4>
+              <p class="nome-bairro"></p>
+              <p class="qtd-quartos"></p>
+              <p class="qtd-banheiros"></p>
+              <hr />
+              <p class="valor"></p>
+            </div>
+
+            <a href="#" class="seemore-btn">Ver mais</a>
+          </div>
+        </div>
+        <!-- IMOVEL BOX -->
+      </section>
+    </main>
+
+    <!-- /FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-title">
+          <h3>
+            <span>&copy; 2025</span> <br />
+            Coimbra Imóveis
+          </h3>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/coimbraimoveis.udi/"
+            target="_blank"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://wa.me/5534991821068?text=Olá!,+Tenho+interesse+nos+serviços+da+Coimbra+Imóveis."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-title">
+          <h3><span> Developed by</span><br />Bruno Henrique.</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/hennriquee" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+
+          <a
+            href="https://wa.me/5534996560351?text=Olá,+me+interessei+em+seu+trabalho!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- /FOOTER -->
+  </body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="shortcut icon" href="./images/logo2.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <script defer src="scripts/navbar.js"></script>
+    <title>Coimbra Imóveis</title>
+  </head>
+  <body>
+    <div class="background">
+      <img src="./images/bg.jpg" alt="backgrod-img" />
+    </div>
+
+    <header>
+      <a class="logo" href="#"><img src="./images/logo.png" alt="logo" /></a>
+
+      <nav class="nav">
+        <div class="nav-links">
+          <a href="./index.html">Início</a>
+          <a href="./pages/catalog.html">Imóveis</a>
+          <a href="#contact">Contato</a>
+          <a href="#about">Sobre</a>
+        </div>
+      </nav>
+
+      <nav class="responsive-nav">
+        <a href="./index.html">Início</a>
+        <a href="./pages/catalog.html">Imóveis</a>
+        <a href="#contact">Contato</a>
+        <a href="#about">Sobre</a>
+      </nav>
+
+      <div class="menu-hamburguer">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <section class="home">
+      <div class="home-container">
+        <div class="home-logo" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./images/logo.png" alt="logo-img" />
+        </div>
+
+        <div class="home-btns" data-aos="fade-up" data-aos-duration="1200">
+          <a href="./pages/catalog.html" class="btn catalog-btn">Catálogo</a>
+          <a href="#contact" class="btn contact-btn">Contato</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="about-container">
+        <div class="about-img" data-aos="fade-up" data-aos-duration="1000">
+          <img src="./images/mateuseluana.png" alt="" />
+        </div>
+        <div class="about-content" data-aos="fade-up" data-aos-duration="1200">
+          <h1>Sobre nós</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            ratione. Ipsa quo illum quasi tempore earum nihil quisquam, quis
+            qui, non saepe, obcaecati voluptatibus autem ea iste nostrum velit
+            quod!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="contact-container">
+        <h1>Contato</h1>
+        <div class="contact-boxes">
+          <a class="contact-box email-contact-box" href="">
+            <div class="contact-box-title">
+              <i class="bx bx-envelope"></i>
+              <span>E-mail</span>
+            </div>
+            <p>coimbraimoveisuberlandia@gmail.com</p>
+          </a>
+          <div class="contact-line-boxes">
+            <a class="contact-box instagram-contact-box" href="">
+              <div class="contact-box-title">
+                <i class="bx bxl-instagram"></i>
+                <span>Instagram</span>
+              </div>
+              <p>@coimbraimoveisudi</p>
+            </a>
+            <a class="contact-box wpp-contact-box" href="">
+              <div class="contact-box-title">
+                <i class="bx bxl-whatsapp"></i>
+                <span>WhatsApp</span>
+              </div>
+              <p>+55 (34) 99182-1068</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /CONTACT -->
+
+    <!-- /FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-title">
+          <h3>
+            <span>&copy; 2025</span> <br />
+            Coimbra Imóveis
+          </h3>
+        </div>
+        <div class="footer-links">
+          <a
+            href="https://www.instagram.com/coimbraimoveis.udi/"
+            target="_blank"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://wa.me/5534991821068?text=Olá!,+Tenho+interesse+nos+serviços+da+Coimbra+Imóveis."
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-container">
+        <div class="footer-title">
+          <h3><span> Developed by</span><br />Bruno Henrique.</h3>
+        </div>
+
+        <div class="footer-links">
+          <a href="https://github.com/hennriquee" target="_blank">
+            <i class="bx bxl-github"></i>
+          </a>
+
+          <a
+            href="https://wa.me/5534996560351?text=Olá,+me+interessei+em+seu+trabalho!"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="bx bxl-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- /FOOTER -->
+
+    <!-- ANIMATE ON SCROLL -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- ANIMATE ON SCROLL -->
+  </body>
+</html>
