@@ -73,6 +73,7 @@ select {
 
 .imoveis {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1.5rem;
@@ -160,12 +161,42 @@ select {
   select {
     width: 100%;
   }
+
+  .imoveis-box-content {
+    margin-top: 1rem;
+    gap: 0.2rem;
+  }
+
+  .valor {
+    margin-top: 0.5rem;
+  }
+
+  p.valor {
+    font-size: 1rem;
+  }
+
+  .imoveis-box {
+    width: 18rem;
+  }
+
+  .imoveis-box-container {
+    gap: 0.2rem;
+  }
 }
 
 @media (min-width: 576px) {
 }
 
 @media (min-width: 768px) {
+  .imoveis-box-content {
+    margin-top: 0;
+    gap: 0;
+  }
+
+  .imoveis-box {
+    width: 15rem;
+  }
+
   .filter-main {
     flex-direction: row;
     justify-content: space-evenly;
