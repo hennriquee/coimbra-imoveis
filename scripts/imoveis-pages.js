@@ -100,9 +100,3 @@ document.addEventListener("DOMContentLoaded", () => {
   // Executa criação da galeria
   createGallery(idLS);
 });
-
-// PARAMS DA URL
-const params = new URLSearchParams();
-params.set("id", idLS);
-
-const newUrl = `https://coimbra-imoveis.netlify.app/index.html?${params.toString()}`;
