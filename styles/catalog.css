@@ -158,6 +158,10 @@ select {
     flex-direction: column;
   }
 
+  main {
+    padding: 4rem;
+  }
+
   select {
     width: 100%;
   }
